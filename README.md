@@ -1,2 +1,2 @@
-# empower_me
+# ER: Empower & Restore
 LaunchCode Final Project 
