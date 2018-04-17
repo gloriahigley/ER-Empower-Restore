@@ -1,5 +1,5 @@
 # ER: Empower & Restore
-##LaunchCode Final Project 
+ ##LaunchCode Final Project 
 
 The goal of this project is to create an easy-to-use application to provide assistance and real-time help for users seeking assistance with at risk youth. When entering the application, the user will be asked a series of questions regarding the situation with an at risk youth and will then be provided with a specialized prevention, intervention, and resources plan based on the answers provided. 
 
@@ -9,7 +9,7 @@ Users for this application may include parents, guardians, educators, or communi
 
 The idea for this application belongs to Centoria Roulette-Jackson, a volunteer coordinator for the Jackson County court system. She has over 15 years of experience working with the community to keep young people out of the juvenile justice system using prevention and intervention methods. We are working together on this project to get all of the knowledge out of her head and onto a scaleable platform to help as many families and children as possible with her expertise. 
 
-##More detailed Elevator Pitch:
+ ##More detailed Elevator Pitch:
 
 **The Problem:** 
 Over a million youth come in contact with the Juvenile Justice System every year and each state spends over a billion dollars to arrest, prosecute, and provide treatment for juvenile offenders. Research has proven that if able to address risk factors associated with delinquency behavior it can reduce a youth from coming in contact with the Juvenile Justice System. Research has also proven if parents, guardians, educators and or community partners are equipped with adequate knowledge and skills that they can provide and or obtain adequate resources for early intervention and prevention. 
@@ -22,7 +22,7 @@ Imagine being a parent, guardian, educator and or community partner trying to ga
 Look no further than this program  to give you a start to get your youth back on track and help is right at your fingertips!
 
 
-##Features
+ ##Features
 
 Data-driven: Answers provided by the user will dictate the path in the application and the treatment plan provided. 
 
