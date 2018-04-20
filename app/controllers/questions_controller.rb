@@ -7,11 +7,9 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-  def first
-    @question_text = "How old is the child or youth?"
-    @question_answer_1 = "8 - 12 years old"
-    @question_answer_2 = "13 - 16 years old"
-    @question_answer_3 = "17 + years old"
+  def first 
+  @question = Question.new
+  @question.question = "How old is the child or youth?"
   end
 
   # GET /questions/1
