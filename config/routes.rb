@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :questions
+  resources :dogs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -10,6 +12,16 @@ Rails.application.routes.draw do
     get 'about', to: 'welcome#about'
 
     get 'assessment', to: 'welcome#assessment'
+
+    resources :questions do
+      collection do
+        get 'first'
+      end
+   
+      member do
+        get 'next'
+      end
+    end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
