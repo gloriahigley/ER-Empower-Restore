@@ -7,11 +7,6 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-  def first 
-  @question = Question.new
-  @question.question = "How old is the child or youth?"
-  end
-
   # GET /questions/1
   # GET /questions/1.json
   def show
@@ -74,6 +69,6 @@ class QuestionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
-      params.require(:question).permit(:question, :answer)
+      params.require(:question).permit(:question_text, :is_first)
     end
 end

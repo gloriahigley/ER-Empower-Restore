@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @routing.question_id %>
+</p>
+
+<p>
+  <strong>Possible:</strong>
+  <%= @routing.possible_id %>
+</p>
+
+<p>
+  <strong>Next question:</strong>
+  <%= @routing.next_question_id %>
+</p>
+
+<%= link_to 'Edit', edit_routing_path(@routing) %> |
+<%= link_to 'Back', routings_path %>

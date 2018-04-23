@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Question:</strong>
-  <%= @question.question %>
+  <strong>Question text:</strong>
+  <%= @question.question_text %>
 </p>
 
 <p>
-  <strong>Answer:</strong>
-  <%= @question.answer %>
+  <strong>Is first:</strong>
+  <%= @question.is_first %>
 </p>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @possible_action_plan.question_id %>
+</p>
+
+<p>
+  <strong>Possible answer:</strong>
+  <%= @possible_action_plan.possible_answer_id %>
+</p>
+
+<p>
+  <strong>Plan text:</strong>
+  <%= @possible_action_plan.plan_text %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @possible_action_plan.order %>
+</p>
+
+<%= link_to 'Edit', edit_possible_action_plan_path(@possible_action_plan) %> |
+<%= link_to 'Back', possible_action_plans_path %>

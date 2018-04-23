@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :questions
+  resources :routings
+  resources :actual_action_plans
+  resources :possible_action_plans
+  resources :actual_answers
+  resources :possible_answers
+  resources :roles
+  resources :assessments
   # resources :questions
   resources :dogs
   # The priority is based upon order of creation: first created -> highest priority.

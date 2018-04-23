@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Actual Answers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Possible answer</th>
+      <th>Next question</th>
+      <th>Assessment</th>
+      <th>Answer text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actual_answers.each do |actual_answer| %>
+      <tr>
+        <td><%= actual_answer.question_id %></td>
+        <td><%= actual_answer.possible_answer_id %></td>
+        <td><%= actual_answer.next_question_id %></td>
+        <td><%= actual_answer.assessment_id %></td>
+        <td><%= actual_answer.answer_text %></td>
+        <td><%= link_to 'Show', actual_answer %></td>
+        <td><%= link_to 'Edit', edit_actual_answer_path(actual_answer) %></td>
+        <td><%= link_to 'Destroy', actual_answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actual answer', new_actual_answer_path %>

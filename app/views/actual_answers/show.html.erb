@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @actual_answer.question_id %>
+</p>
+
+<p>
+  <strong>Possible answer:</strong>
+  <%= @actual_answer.possible_answer_id %>
+</p>
+
+<p>
+  <strong>Next question:</strong>
+  <%= @actual_answer.next_question_id %>
+</p>
+
+<p>
+  <strong>Assessment:</strong>
+  <%= @actual_answer.assessment_id %>
+</p>
+
+<p>
+  <strong>Answer text:</strong>
+  <%= @actual_answer.answer_text %>
+</p>
+
+<%= link_to 'Edit', edit_actual_answer_path(@actual_answer) %> |
+<%= link_to 'Back', actual_answers_path %>

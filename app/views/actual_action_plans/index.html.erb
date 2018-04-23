@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Actual Action Plans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Assessment</th>
+      <th>Possible action plan</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @actual_action_plans.each do |actual_action_plan| %>
+      <tr>
+        <td><%= actual_action_plan.assessment_id %></td>
+        <td><%= actual_action_plan.possible_action_plan_id %></td>
+        <td><%= link_to 'Show', actual_action_plan %></td>
+        <td><%= link_to 'Edit', edit_actual_action_plan_path(actual_action_plan) %></td>
+        <td><%= link_to 'Destroy', actual_action_plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Actual action plan', new_actual_action_plan_path %>

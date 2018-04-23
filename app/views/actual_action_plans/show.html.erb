@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assessment:</strong>
+  <%= @actual_action_plan.assessment_id %>
+</p>
+
+<p>
+  <strong>Possible action plan:</strong>
+  <%= @actual_action_plan.possible_action_plan_id %>
+</p>
+
+<%= link_to 'Edit', edit_actual_action_plan_path(@actual_action_plan) %> |
+<%= link_to 'Back', actual_action_plans_path %>

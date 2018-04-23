@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Possible Action Plans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Possible answer</th>
+      <th>Plan text</th>
+      <th>Order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @possible_action_plans.each do |possible_action_plan| %>
+      <tr>
+        <td><%= possible_action_plan.question_id %></td>
+        <td><%= possible_action_plan.possible_answer_id %></td>
+        <td><%= possible_action_plan.plan_text %></td>
+        <td><%= possible_action_plan.order %></td>
+        <td><%= link_to 'Show', possible_action_plan %></td>
+        <td><%= link_to 'Edit', edit_possible_action_plan_path(possible_action_plan) %></td>
+        <td><%= link_to 'Destroy', possible_action_plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Possible action plan', new_possible_action_plan_path %>
