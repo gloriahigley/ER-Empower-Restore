@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180423005827) do
+ActiveRecord::Schema.define(version: 20180423175005) do
 
   create_table "actual_action_plans", force: :cascade do |t|
     t.integer  "assessment_id"
@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(version: 20180423005827) do
   create_table "actual_answers", force: :cascade do |t|
     t.integer  "question_id"
     t.integer  "possible_answer_id"
-    t.integer  "next_question_id"
     t.integer  "assessment_id"
     t.string   "answer_text"
     t.datetime "created_at",         null: false
@@ -55,10 +54,9 @@ ActiveRecord::Schema.define(version: 20180423005827) do
     t.integer  "question_id"
     t.integer  "order"
     t.string   "answer_text"
-    t.boolean  "is_text"
-    t.string   "boolean"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "is_text"
   end
 
   create_table "questions", force: :cascade do |t|
@@ -77,10 +75,10 @@ ActiveRecord::Schema.define(version: 20180423005827) do
 
   create_table "routings", force: :cascade do |t|
     t.integer  "question_id"
-    t.integer  "possible_id"
     t.integer  "next_question_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "possible_answer_id"
   end
 
 end
