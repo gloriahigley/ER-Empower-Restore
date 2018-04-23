@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :questions
+  #resources :questions
   resources :routings
   resources :actual_action_plans
   resources :possible_action_plans
@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-    root 'welcome#home'
+    #root 'welcome#home'  
+
+    root 'questions#first'
 
     get 'about', to: 'welcome#about'
 
@@ -28,6 +30,7 @@ Rails.application.routes.draw do
    
       member do
         get 'next'
+        post 'answer'
       end
     end
 

@@ -17,6 +17,14 @@ class QuestionsController < ApplicationController
     @question = Question.new
   end
 
+  def answer
+
+  end
+
+  def first
+    @question = Question.new(:id => 1, :question_text => "What age are you?")
+  end
+
   # GET /questions/1/edit
   def edit
   end
