@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20180423175005) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "actual_action_plans", force: :cascade do |t|
     t.integer  "assessment_id"
     t.integer  "possible_action_plan_id"
@@ -54,9 +57,9 @@ ActiveRecord::Schema.define(version: 20180423175005) do
     t.integer  "question_id"
     t.integer  "order"
     t.string   "answer_text"
+    t.string   "boolean"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.boolean  "is_text"
   end
 
   create_table "questions", force: :cascade do |t|
